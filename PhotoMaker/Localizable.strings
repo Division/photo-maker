@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  PhotoMaker
+
+  Created by NSidorenko on 9/25/12.
+  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+*/
+
+"take_a_photo"				= "Take a photo";
+"camera_roll"				= "Camera roll";
+"enabled"					= "Enabled";
+"disabled"					= "Disabled";
+"on"						= "On";
+"off"						= "Off";
+"blur"						= "Blur";
+"cancel"					= "Cancel";
+"filters"					= "Filters";
+"retake"					= "Retake";
+"caption"					= "Caption";
+"save"						= "Save";
+"enter_text_placeholder"	= "Your text here";
+"swipe_to_select_preset"	= "Swipe to select a preset";
+"choose_recent_photo"		= "You can choose one of your recent photo";
+"choose_predefined_photo"	= "You can choose an example image";
+"error"						= "Error";
+"camera_unavailable"		= "Sorry, camera is not available";
+"image_too_small"			= "Sorry, image is too small";
+"ok"						= "Ok";
+"advice"					= "Advice";
+"editor_help"				= "Pinch and drag image to scale and move.\n\n Two finger swipe to select frame. \n\n Enjoy!";
+"done"						= "Done!";
+"image_saved"				= "Image has been saved!";
