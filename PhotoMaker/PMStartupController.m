@@ -29,12 +29,6 @@
 
 @implementation PMStartupController
 
-@synthesize assets = _assets;
-@synthesize photoDataProvider = _photoDataProvider;
-@synthesize buttonAnimPlayed = _buttonAnimPlayed;
-@dynamic startupView;
-@dynamic bottomScroll;
-
 #pragma mark - Properties
 
 -(PMStartupView *) startupView

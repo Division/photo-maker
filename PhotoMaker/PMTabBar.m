@@ -21,13 +21,6 @@
 
 @implementation PMTabBar
 
-@synthesize allButtons = _allButtons;
-@synthesize leftSize = _leftSize;
-@synthesize rightSize = _rightSize;
-@synthesize buttonCount = _buttonCount;
-@synthesize selectedButton = _selectedButton;
-@synthesize delegate = _delegate;
-
 -(void) commonInit
 {
 	[super commonInit];

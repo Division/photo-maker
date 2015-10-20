@@ -19,10 +19,6 @@
 
 @implementation PMButton
 
-@synthesize pmButtonType = _pmButtonType;
-@synthesize commonInitCalled = _commonInitCalled;
-@synthesize blurEnabled = _blurEnabled;
-
 #pragma mark - Static methods
 
 +(PMButton *)buttonWithPMType:(PMButtonType)type

@@ -10,8 +10,6 @@
 
 @implementation PMImageEditorPresetTextBottom
 
-@synthesize maskImageView = _maskImageView;
-
 
 -(void) awakeFromNib
 {

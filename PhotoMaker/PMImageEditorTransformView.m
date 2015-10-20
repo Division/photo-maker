@@ -18,8 +18,6 @@
 
 @implementation PMImageEditorTransformView
 
-@synthesize imageProcessingView = _imageProcessingView;
-
 -(instancetype) initWithFrame:(CGRect)frame andImageProcessingView:(PMImageProcessingView *)imageProcessingView
 {
 	if (self = [super initWithFrame:frame]) {

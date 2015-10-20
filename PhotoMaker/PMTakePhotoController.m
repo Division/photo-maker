@@ -31,15 +31,6 @@ static const NSTimeInterval kPMCameraSwitchDelay = 1;
 
 @implementation PMTakePhotoController
 
-@synthesize blurEnabled = _blurEnabled;
-@synthesize flashEnabled = _flashEnabled;
-@synthesize currentFilterType = _currentFilterType;
-@synthesize lastCameraSwitchTime = _lastCameraSwitchTime;
-@dynamic imageProcessingView;
-@dynamic takePhotoView;
-@dynamic filterSelectionView;
-
-
 #pragma mark - Properties
 
 -(PMTakePhotoView *) takePhotoView

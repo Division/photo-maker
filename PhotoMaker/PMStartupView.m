@@ -17,12 +17,6 @@ static const NSTimeInterval kPMBottomScrollAnimationDuration = 1.0f;
 
 @implementation PMStartupView
 
-@synthesize titleLabel = _titleLabel;
-@synthesize takePhotoButton = _takePhotoButton;
-@synthesize cameraRollButton = _cameraRollButton;
-@synthesize bottomScroll = _bottomScroll;
-@synthesize bottomScrollLabel = _bottomScrollLabel;
-
 -(void) commonInit
 {
 	[super commonInit];

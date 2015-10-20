@@ -16,8 +16,6 @@
 
 @implementation PMView
 
-@synthesize commonInitCalled = _commonInitCalled;
-
 -(instancetype) init
 {
     if (self = [super init]) {

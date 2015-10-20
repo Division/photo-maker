@@ -29,15 +29,6 @@
 
 @implementation PMPhotoProcessorController
 
-@synthesize alreadyConfigured = _alreadyConfigured;
-@synthesize sourceImage = _sourceImage;
-@synthesize blurEnabled = _blurEnabled;
-@synthesize currentFilterType = _currentFilterType;
-@synthesize sourceIsCameraRoll = _sourceIsCameraRoll;
-@dynamic imageEditorView;
-@dynamic photoProcessorView;
-@dynamic filterSelectionView;
-
 static BOOL _sessionAdviceShown = NO;
 
 #pragma mark - Properties

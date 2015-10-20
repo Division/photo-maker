@@ -25,19 +25,6 @@ static const int kPMBottomControlsOffset = 10;
 
 @implementation PMTakePhotoView
 
-@synthesize flashLightButton = _flashLightButton;
-@synthesize cameraSwitchButton = _cameraSwitchButton;
-@synthesize blurButton = _blurButton;
-@synthesize cancelButton = _cancelButton;
-@synthesize makePhotoButton = _makePhotoButton;
-@synthesize filtersButton = _filtersButton;
-@synthesize filterSelectionView = _filterSelectionView;
-@synthesize imageProcessingView = _imageProcessingView;
-@synthesize filterSelectionVisible = _filterSelectionVisible;
-@synthesize allButtons = _allButtons;
-@synthesize bottomContainerView = _bottomContainerView;
-@synthesize initialBottomContainerFrame = _initialBottomContainerFrame;
-
 #pragma mark - init/dealloc
 
 -(void) awakeFromNib

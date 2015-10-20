@@ -13,11 +13,6 @@
 
 @implementation PMFilterSelectionViewCell
 
-@synthesize selected = _selected;
-@synthesize contentImageView = _contentImageView;
-@synthesize outlineImageView = _outlineImageView;
-@dynamic contentImage;
-
 #pragma mark - Properties
 
 -(void) setSelected:(BOOL)selected

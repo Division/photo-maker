@@ -32,18 +32,6 @@ static const int kPMImageCameraOffset = 68;
 
 @implementation PMImageProcessingView
 
-@synthesize gpuImageView = _gpuImageView;
-@synthesize viewMode = _viewMode;
-@synthesize alreadyConfigured = _alreadyConfigured;
-@synthesize gpuImageOutput = _gpuImageOutput;
-@synthesize flashEnabled = _flashEnabled;
-@synthesize sourceImage = _sourceImage;
-@synthesize filterType = _filterType;
-@synthesize blurEnabled = _blurEnabled;
-@synthesize lastFilterInChain = _lastFilterInChain;
-@dynamic cameraOutput;
-@dynamic imageOutput;
-
 #pragma mark - Properties
 
 -(void) setFlashEnabled:(BOOL)flashEnabled

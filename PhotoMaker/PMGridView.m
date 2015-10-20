@@ -24,15 +24,6 @@ const UIEdgeInsets kPMGridViewInitialContentInsets = {0, 0, 0, 0};
 
 @implementation PMGridView
 
-@synthesize gmGridView = _gmGridView;
-@synthesize dataSource = _dataSource;
-@synthesize delegate = _delegate;
-@synthesize currentReusableCell = _currentReusableCell;
-@synthesize layoutType = _layoutType;
-@synthesize showScrollIndicators = _showScrollIndicators;
-@dynamic contentInsets;
-@dynamic itemSpacing;
-
 #pragma mark - Properties
 
 -(void) setLayoutType:(PMGridViewLayoutType)layoutType

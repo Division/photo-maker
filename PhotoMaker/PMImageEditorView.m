@@ -36,19 +36,6 @@ static const int kPMInputOffset = 15;
 
 @implementation PMImageEditorView
 
-@synthesize imageProcessingView = _imageProcessingView;
-@synthesize inputView = _inputView;
-@synthesize containerScrollView = _containerScrollView;
-@synthesize containerView = _containerView;
-@synthesize imageTransformView = _imageTransformView;
-@synthesize captionVisible = _captionVisible;
-@synthesize presetManager = _presetManager;
-@synthesize currentText = _currentText;
-@synthesize currentFont = _currentFont;
-@synthesize delegate = _delegate;
-@synthesize adviceShown = _adviceShown;
-@dynamic currentPreset;
-
 #pragma mark - Properties
 
 -(PMImageEditorPresetBase *)currentPreset

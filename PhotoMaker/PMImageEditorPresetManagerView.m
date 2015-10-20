@@ -28,11 +28,6 @@
 
 @implementation PMImageEditorPresetManagerView
 
-@synthesize currentPreset = _currentPreset;
-@synthesize presetClasses = _presetClasses;
-@synthesize currentIndex = _currentIndex;
-@synthesize delegate = _delegate;
-
 -(void) commonInit
 {
 	[super commonInit];

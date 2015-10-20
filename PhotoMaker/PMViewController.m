@@ -18,8 +18,6 @@
 
 @implementation PMViewController
 
-@synthesize commonInitCalled = _commonInitCalled;
-
 +(id) loadFromNib 
 {
 	NSString *className = [self description];

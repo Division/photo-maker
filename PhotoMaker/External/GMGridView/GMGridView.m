@@ -134,25 +134,6 @@ static const UIViewAnimationOptions kDefaultAnimationOptions = UIViewAnimationOp
 
 @implementation GMGridView
 
-@synthesize sortingDelegate = _sortingDelegate, dataSource = _dataSource, transformDelegate = _transformDelegate, actionDelegate = _actionDelegate;
-@synthesize mainSuperView = _mainSuperView;
-@synthesize layoutStrategy = _layoutStrategy;
-@synthesize itemSpacing = _itemSpacing;
-@synthesize style = _style;
-@synthesize minimumPressDuration;
-@synthesize centerGrid = _centerGrid;
-@synthesize minEdgeInsets = _minEdgeInsets;
-@synthesize showFullSizeViewWithAlphaWhenTransforming;
-@synthesize editing = _editing;
-@synthesize enableEditOnLongPress;
-@synthesize disableEditOnEmptySpaceTap;
-
-@synthesize itemsSubviewsCacheIsValid = _itemsSubviewsCacheIsValid;
-@synthesize itemSubviewsCache;
-
-@synthesize firstPositionLoaded = _firstPositionLoaded;
-@synthesize lastPositionLoaded = _lastPositionLoaded;
-
 //////////////////////////////////////////////////////////////
 #pragma mark Constructors and destructor
 //////////////////////////////////////////////////////////////

@@ -29,13 +29,6 @@ static const int kPMNumberImagesInGallery = 40;
 
 @implementation PMStartupPhotosDataProvider
 
-@synthesize assets = _assets;
-@synthesize exampleThumbnails = _exampleThumbnails;
-@synthesize assetsLibrary = _assetsLibrary;
-@synthesize delegate = _delegate;
-@synthesize usingCameraRoll = _usingCameraRoll;
-@synthesize dataLoaded = _dataLoaded;
-
 #pragma mark - init/dealloc
 
 -(instancetype) init

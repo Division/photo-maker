@@ -45,19 +45,6 @@
 
 @implementation GMGridViewCell
 
-@synthesize contentView = _contentView;
-@synthesize editing = _editing;
-@synthesize inShakingMode = _inShakingMode;
-@synthesize fullSize = _fullSize;
-@synthesize fullSizeView = _fullSizeView;
-@synthesize inFullSizeMode = _inFullSizeMode;
-@synthesize defaultFullsizeViewResizingMask = _defaultFullsizeViewResizingMask;
-@synthesize deleteButton = _deleteButton;
-@synthesize deleteBlock = _deleteBlock;
-@synthesize deleteButtonIcon = _deleteButtonIcon;
-@synthesize deleteButtonOffset;
-@synthesize reuseIdentifier;
-@synthesize highlighted;
 
 //////////////////////////////////////////////////////////////
 #pragma mark Constructors
@@ -252,11 +239,11 @@
 
 
 - (void)setHighlighted:(BOOL)aHighlighted {
-    highlighted = aHighlighted;
+    _highlighted = aHighlighted;
 	
 	[self.contentView recursiveEnumerateSubviewsUsingBlock:^(UIView *view, BOOL *stop) {
 		if ([view respondsToSelector:@selector(setHighlighted:)]) {
-			[(UIControl*)view setHighlighted:highlighted];
+			[(UIControl*)view setHighlighted:_highlighted];
 		}
 	}];
 }

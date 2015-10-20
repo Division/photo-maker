@@ -16,9 +16,6 @@ static const int kPMFilterSelectionViewCellSpacing = 1;
 
 @implementation PMFilterSelectionView
 
-@synthesize selectedIndex = _selectedIndex;
-@synthesize filterSelectionDelegate = _filterSelectionDelegate;
-
 #pragma mark - Properties
 
 -(void) setSelectedIndex:(int)newSelectedIndex

@@ -18,9 +18,6 @@
 
 @implementation PMFontDefinition
 
-@synthesize name = _name;
-@synthesize scale = _scale;
-
 static NSArray *_allFontDefinitions;
 
 +(void) initialize

@@ -22,13 +22,6 @@ static NSString *const kPMFontDisplayString = @"Aa";
 
 @implementation PMImageEditorInputView 
 
-@synthesize inputTextView;
-@synthesize fontTabBar;
-@synthesize inputBackgroundImageView;
-@synthesize backgroundImageView;
-@synthesize delegate = _delegate;
-@synthesize fonts = _fonts;
-
 #pragma mark Properties
 
 -(void) setDelegate:(id<PMImageEditorInputViewDelegate>)delegate

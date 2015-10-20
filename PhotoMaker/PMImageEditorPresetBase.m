@@ -12,8 +12,6 @@
 
 @implementation PMImageEditorPresetBase
 
-@synthesize label = _label;
-
 -(void) awakeFromNib
 {
 	[super awakeFromNib];

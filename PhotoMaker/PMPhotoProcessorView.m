@@ -20,13 +20,6 @@
 
 @implementation PMPhotoProcessorView
 
-@synthesize retakeButton = _retakeButton;
-@synthesize saveButton = _saveButton;
-@synthesize captionButton = _captionButton;
-@synthesize imageEditorView = _imageEditorView;
-@synthesize filterSelectionView = _filterSelectionView;
-@synthesize containerView = _containerView;
-
 #pragma mark - init/dealloc
 
 -(void) awakeFromNib
