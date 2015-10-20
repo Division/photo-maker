@@ -20,7 +20,7 @@
  */
 @interface PMFilterSelectionView : PMGridView<PMGridViewDataSource, PMGridViewDelegate>
 
-@property (nonatomic, unsafe_unretained) id<PMFilterSelectionViewDelegate> filterSelectionDelegate;
+@property (nonatomic, weak) id<PMFilterSelectionViewDelegate> filterSelectionDelegate;
 @property (nonatomic, assign) int selectedIndex;
 
 @end

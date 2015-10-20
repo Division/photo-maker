@@ -25,7 +25,7 @@ static const int kPMInputOffset = 15;
 @property (nonatomic, strong) PMView *containerView;
 @property (nonatomic, strong) PMImageEditorTransformView *imageTransformView;
 @property (nonatomic, assign) BOOL captionVisible;
-@property (unsafe_unretained, nonatomic, readonly) PMImageEditorPresetBase *currentPreset;
+@property (weak, nonatomic, readonly) PMImageEditorPresetBase *currentPreset;
 @property (nonatomic, strong) PMImageEditorPresetManagerView *presetManager;
 @property (nonatomic, strong) NSString *currentText;
 @property (nonatomic, assign) int currentFont;

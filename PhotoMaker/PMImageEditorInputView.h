@@ -22,7 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *inputBackgroundImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
-@property (nonatomic, unsafe_unretained) id<PMImageEditorInputViewDelegate> delegate;
+@property (nonatomic, weak) id<PMImageEditorInputViewDelegate> delegate;
 
 -(void) inpuStateChanged:(BOOL)isEnabled;
 

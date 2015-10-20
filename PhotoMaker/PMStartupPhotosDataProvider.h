@@ -32,7 +32,7 @@
 -(UIImage *) thumbnailAtIndex:(NSInteger)imageIndex;
 -(UIImage *) imageAtIndex:(NSInteger)imageIndex;
 
-@property (nonatomic, unsafe_unretained) id<PMStartupPhotosDataProviderDelegate>delegate;
+@property (nonatomic, weak) id<PMStartupPhotosDataProviderDelegate>delegate;
 @property (nonatomic, readonly) BOOL dataLoaded;
 @property (nonatomic, readonly) BOOL usingCameraRoll;
 

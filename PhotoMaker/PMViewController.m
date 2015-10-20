@@ -71,14 +71,6 @@
 }
 
 
--(void) dealloc 
-{
-	// Make sure viewDidUnload called
-	[self viewDidUnload];
-}
-
-
-
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);

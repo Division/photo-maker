@@ -29,6 +29,6 @@
 @property (getter=getEditedImage, readonly, strong) UIImage *editedImage;
 
 @property (nonatomic, readonly) BOOL captionVisible;
-@property (nonatomic, unsafe_unretained) id<PMImageEditorViewDelegate> delegate;
+@property (nonatomic, weak) id<PMImageEditorViewDelegate> delegate;
 
 @end

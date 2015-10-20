@@ -22,6 +22,6 @@
 -(void) handleSwipe:(BOOL) isLeft;
 
 @property (readonly, nonatomic, strong) PMImageEditorPresetBase *currentPreset;
-@property (nonatomic, unsafe_unretained) id<PMImageEditorPresetManagerViewDelegate> delegate;
+@property (nonatomic, weak) id<PMImageEditorPresetManagerViewDelegate> delegate;
 
 @end

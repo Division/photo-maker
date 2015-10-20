@@ -30,7 +30,7 @@
 
 -(void) setButtonSelectedWithIndex:(int)index;
 
-@property (nonatomic, unsafe_unretained) id <PMTabBarDelegate> delegate;
+@property (nonatomic, weak) id <PMTabBarDelegate> delegate;
 @property (nonatomic, strong, readonly) NSArray *allButtons;
 
 @end

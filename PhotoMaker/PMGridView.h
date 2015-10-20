@@ -52,7 +52,7 @@ typedef enum
 @property (nonatomic, assign) int itemSpacing;
 @property (nonatomic, assign) BOOL showScrollIndicators;
 
-@property (nonatomic, unsafe_unretained) id<PMGridViewDataSource> dataSource;
-@property (nonatomic, unsafe_unretained) id<PMGridViewDelegate> delegate;
+@property (nonatomic, weak) id<PMGridViewDataSource> dataSource;
+@property (nonatomic, weak) id<PMGridViewDelegate> delegate;
 
 @end

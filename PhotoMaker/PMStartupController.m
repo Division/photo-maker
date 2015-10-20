@@ -19,8 +19,8 @@
 
 @interface PMStartupController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-@property (unsafe_unretained, nonatomic, readonly) PMStartupView *startupView;
-@property (unsafe_unretained, nonatomic, readonly) PMGridView *bottomScroll;
+@property (weak, nonatomic, readonly) PMStartupView *startupView;
+@property (weak, nonatomic, readonly) PMGridView *bottomScroll;
 @property (nonatomic, strong) NSMutableArray *assets;
 @property (nonatomic, strong) PMStartupPhotosDataProvider *photoDataProvider;
 @property (nonatomic, assign) BOOL buttonAnimPlayed;
@@ -99,7 +99,7 @@
 		PMPhotoProcessorController *processorController = [PMPhotoProcessorController loadFromNib];
 		image = [PMImageUtils correctImage:image];
 		[processorController configureWithImage:image filterType:PMFilterTypeNone blurEnabled:NO sourceIsCameraRoll:YES];
-		[self presentModalViewController:processorController animated:YES];
+		[self presentViewController:processorController animated:YES completion:nil];
 	}
 }
 
@@ -165,7 +165,7 @@
 	// Checking if device has camera
 	if ([UIImagePickerController isSourceTypeAvailable: UIImagePickerControllerSourceTypeCamera]) {
 		PMTakePhotoController *takePhotoController = [PMTakePhotoController loadFromNib];
-		[self presentModalViewController:takePhotoController animated:YES];
+		[self presentViewController:takePhotoController animated:YES completion:nil];
 	} else {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:string_error 
 														 message:string_camera_unavailable 
@@ -182,7 +182,7 @@
 	UIImagePickerController *picker = [[UIImagePickerController alloc] init];
 	picker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
 	picker.delegate = self;
-	[self presentModalViewController:picker animated:YES];
+	[self presentViewController:picker animated:YES completion:nil];
 }
 
 #pragma mark - Image Picker Delegate
@@ -190,14 +190,14 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
 	UIImage *image = info[UIImagePickerControllerOriginalImage];
-	[self dismissModalViewControllerAnimated:NO];
+	[self dismissViewControllerAnimated:NO completion:nil];
 	[self showProcessorControllerWithImage:image];
 }
 
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

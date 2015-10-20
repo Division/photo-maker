@@ -21,9 +21,9 @@
 @property (nonatomic, assign) PMFilterType currentFilterType;
 @property (nonatomic, assign) BOOL sourceIsCameraRoll;
 
-@property (unsafe_unretained, nonatomic, readonly) PMImageEditorView *imageEditorView;
-@property (unsafe_unretained, nonatomic, readonly) PMPhotoProcessorView *photoProcessorView;
-@property (unsafe_unretained, nonatomic, readonly) PMFilterSelectionView *filterSelectionView;
+@property (weak, nonatomic, readonly) PMImageEditorView *imageEditorView;
+@property (weak, nonatomic, readonly) PMPhotoProcessorView *photoProcessorView;
+@property (weak, nonatomic, readonly) PMFilterSelectionView *filterSelectionView;
 
 @end
 
@@ -145,7 +145,7 @@ static BOOL _sessionAdviceShown = NO;
 
 -(IBAction) didPressRetale:(id)sender
 {
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -199,7 +199,7 @@ static BOOL _sessionAdviceShown = NO;
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

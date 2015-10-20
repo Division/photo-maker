@@ -18,9 +18,9 @@ static const NSTimeInterval kPMCameraSwitchDelay = 1;
 
 @interface PMTakePhotoController () <PMFilterSelectionViewDelegate>
 
-@property (unsafe_unretained, nonatomic, readonly) PMImageProcessingView *imageProcessingView;
-@property (unsafe_unretained, nonatomic, readonly) PMTakePhotoView *takePhotoView;
-@property (unsafe_unretained, nonatomic, readonly) PMFilterSelectionView *filterSelectionView;
+@property (weak, nonatomic, readonly) PMImageProcessingView *imageProcessingView;
+@property (weak, nonatomic, readonly) PMTakePhotoView *takePhotoView;
+@property (weak, nonatomic, readonly) PMFilterSelectionView *filterSelectionView;
 @property (nonatomic, assign) BOOL blurEnabled;
 @property (nonatomic, assign) BOOL flashEnabled;
 @property (nonatomic, assign) PMFilterType currentFilterType;
@@ -141,7 +141,7 @@ static const NSTimeInterval kPMCameraSwitchDelay = 1;
 	[self.imageProcessingView makePhotoWithCompletionBlock:^(UIImage *image, NSError *error){
 		PMPhotoProcessorController *processor = [PMPhotoProcessorController loadFromNib];
 		[processor configureWithImage:image filterType:self.currentFilterType blurEnabled:self.blurEnabled sourceIsCameraRoll:NO];
-		[self presentModalViewController:processor animated:YES];
+		[self presentViewController:processor animated:YES completion:nil];
 	}];
 }
 
@@ -150,7 +150,7 @@ static const NSTimeInterval kPMCameraSwitchDelay = 1;
 
 -(IBAction) didPressCancel:(id)sender
 {
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

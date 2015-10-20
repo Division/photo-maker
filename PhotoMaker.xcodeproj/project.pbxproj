@@ -1248,7 +1248,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoMaker/PhotoMaker-Prefix.pch";
 				INFOPLIST_FILE = "PhotoMaker/PhotoMaker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -1317,7 +1317,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoMaker/PhotoMaker-Prefix.pch";
 				INFOPLIST_FILE = "PhotoMaker/PhotoMaker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -1335,7 +1335,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoMaker/PhotoMaker-Prefix.pch";
 				INFOPLIST_FILE = "PhotoMaker/PhotoMaker-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",

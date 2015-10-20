@@ -12,8 +12,6 @@
 #import "PMConst.h"
 #import "PMImageUtils.h"
 
-static const int kPMImageCameraOffset = 68;
-
 @interface PMImageProcessingView()
 
 @property (nonatomic, strong) GPUImageView *gpuImageView;
@@ -21,8 +19,8 @@ static const int kPMImageCameraOffset = 68;
 
 @property (nonatomic, assign) PMImageProcessingViewMode viewMode;
 @property (nonatomic, assign) BOOL alreadyConfigured;
-@property (unsafe_unretained, nonatomic, readonly) GPUImageStillCamera *cameraOutput;
-@property (unsafe_unretained, nonatomic, readonly) GPUImagePicture *imageOutput;
+@property (weak, nonatomic, readonly) GPUImageStillCamera *cameraOutput;
+@property (weak, nonatomic, readonly) GPUImagePicture *imageOutput;
 @property (nonatomic, assign) PMFilterType filterType;
 @property (nonatomic, assign) BOOL blurEnabled;
 @property (nonatomic, strong) GPUImageOutput *lastFilterInChain;
